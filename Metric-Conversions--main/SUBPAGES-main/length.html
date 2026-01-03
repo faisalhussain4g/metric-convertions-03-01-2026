@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>length conversion</title>
+ 
+ <!-- ===============CSS LINK START=============== -->
+     <link rel="stylesheet" href="/Css/bootstrap.min.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<!-- ===============CSS LINK=============== -->
+
+<!-- ===============HEADER START=============== -->
+
+<body>
+
+    <div class="top-header">
+        <h1>Metric Conversion</h1>
+        <img src="/Images/logo5.png" class="header-logo">
+    </div>
+
+    <!-- ===============HEADER END=============== -->
+
+    <!-- ===============NAVBAR START=============== -->
+    <nav>
+        <ul>
+            <li><a href="/#home">Home</a></li>
+            <li><a href="#length">Length</a></li>
+            <li><a href="#area">Area</a></li>
+            <li><a href="#volume">Volume</a></li>
+            <li><a href="#mass">Mass</a></li>
+            <li><a href="#temperature">Temperature</a></li>
+            <li><a href="#currency">Currency</a></li>
+            <li><a href="#history">History & Info</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#faqs">FAQs</a></li>
+        </ul>
+    </nav>
+    <!-- ===============NAVBAR END=============== -->
+
+  <h1 class="h1"> LENGTH CONVERSIONS</h1>
+ <br>
+<div class="container">
+<p>Length conversion is the process of translating a measurement of distance or dimension from one unit
+        of length into another equivalent unit, without changing the actual physical size being measured. It
+        is a fundamental concept in mathematics, science, engineering, geography, construction, and everyday
+        problem-solving, allowing values expressed in different measurement systems to be compared,
+        understood, and used consistently
+        Length conversion relies on established conversion factors, which define the exact or approximate
+        numerical relationships between units. For example, in the metric system, units are related by
+        powers of ten
+        <span> (such as 1 meter = 100 centimeters or 1 kilometer = 1,000 meters)</span>,making conversions
+        systematic and straightforward. In contrast, systems like the imperial or US customary system use
+        fixed but non-decimal relationships (such as 1 foot = 12 inches or 1 mile = 5,280 feet), which
+        require multiplication or division by specific constants.
+        The purpose of length conversion is to ensure accuracy, clarity, and standardization when
+        measurements are communicated across different contexts or regions. Since different countries,
+        disciplines, and industries adopt different measurement systems, converting length units allows
+        information to remain meaningful and precise regardless of the units originally used. For example,
+        scientific research often requires conversion to standard SI units, while construction projects may
+        involve converting architectural measurements into practical working units.
+        Mathematically, length conversion involves multiplying or dividing a given measurement by a
+        conversion factor so that the numerical value changes while the actual length remains the same.
+        Conceptually, it preserves equivalence: although the number and unit symbol change, the physical
+        distance does not.
+      </p>
+</div>
+<br>
+  
+ <!-- =============== LENGTH SUB PAGE =============== -->
+<section id="length" class="length-subpage">
+
+    <!-- <h2>Length Conversion</h2> -->
+
+    <!-- TOP IMAGES -->
+    <div class="length-images">
+        <img src="/Images/l1.jpg">
+        <img src="/Images/w (1).jpg">
+    </div>
+
+    <!-- CENTER CONVERTER (INDEX STYLE) -->
+    <div class="length-center">
+
+        <!-- <p class="length-desc">
+            Length conversion is the process of converting a measurement of length from one unit to another.
+        </p>
+ -->
+        <div class="converter-grid">
+            <div>
+                <div class="form-group">
+                    <label>Value</label>
+                    <input type="number" id="lengthValue">
+                </div>
+
+                <div class="form-group">
+                    <label>From</label>
+                    <select id="lengthFrom"></select>
+                </div>
+
+                <div class="form-group">
+                    <label>To</label>
+                    <select id="lengthTo"></select>
+                </div>
+
+                <div class="button-group">
+                    <button onclick="convert('length')">Convert</button>
+                    <button class="clear-btn" onclick="clearFields('length')">Clear</button>
+                </div>
+
+                <div id="lengthResult" class="result"></div>
+            </div>
+
+            <div>
+                <h3>Metric Conversion Chart</h3>
+                <table id="lengthTable">
+                    <tr>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Factor</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOTTOM IMAGES -->
+    <div class="length-images">
+        <img src="/Images/w (2).jpg">
+        <img src="/Images/w (3).jpg">
+    </div>
+
+</section>
+<!-- =============== END LENGTH SUB PAGE =============== -->
+
+ 
+<!-- types -->
+    <h1 class="h11">TYPES OF LENGTH CONVERSIONS</h1>
+  <div class="container1">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5 class="card-title">Metric System Conversions</h5>
+            <p class="card-text">Used in most countries and based on powers of 10.
+              <br>
+              <b>Common units (small → large):</b>
+              <br>
+              Millimeter (mm)
+              <br>
+              Centimeter (cm)
+              <br>
+              Meter (m)
+              <br>
+              Kilometer (km)
+             <b>  Examples:</b>
+              10 mm = 1 cm
+              <br>
+              100 cm = 1 m
+              <br>
+              1,000 m = 1 km
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Imperial / US Customary System Conversions</h5>
+            <p class="card-text">Used mainly in the United States and a few other places.
+              <br>
+              <b>Common units (small → large):</b>
+              <br>
+              Inch (in)
+              <br>
+              Foot (ft)
+              <br>
+              Mile (mi)
+              <br>
+               <b>Examples:</b>
+              <br>
+              12 in = 1 ft
+              <br>
+              3 ft = 1 yd
+              <br>
+              1,760 yd = 1 mi.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Metric ↔ Imperial (Cross-System) Conversions</h5>
+            <p class="card-text">Used when switching between metric and imperial systems.
+              <br>
+              <b>Common conversions:</b>
+              <br>
+              1 inch = 2.54 cm
+              <br>
+              1 foot = 0.3048 m
+              <br>
+              1 yard = 0.9144 m
+              <br>
+              1 mile ≈ 1.609 km
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Small-Scale Conversions</h5>
+            <p class="card-text">Used for very tiny lengths (science, engineering).
+              <br>
+              <b>Examples:</b>
+              <br>
+              Micrometer (µm)
+              <br>
+              Nanometer (nm)
+              <br>
+               <b>Conversions:</b>
+              <br>
+              1 µm = 0.001 mm
+              <br>
+              1 nm = 0.000001 mm
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Large-Scale Conversions</h5>
+            <p class="card-text">Used for very large distances (geography, astronomy).
+              <br>
+              <b>Examples:</b>
+              <br>
+              Kilometer (km) 
+              <br>
+              Astronomical Unit (AU)
+              <br>
+              Light-year (ly)
+              <br>
+               <b>Conversions:</b>
+              <br>
+              1 AU ≈ 149.6 million km
+              <br>
+              1 light-year ≈ 9.46 trillion km
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card text-center mb-3">
+          <div class="card-body">
+            <h5 class="card-title"> Everyday Practical Conversions</h5>
+            <p class="card-text">Used in daily life, construction, travel, and clothing.
+              <br>
+              <b>Examples:</b>
+              <br>
+              Height: feet ↔ centimeters
+              <br>
+              Road distance: miles ↔ kilometers
+              <br>
+              Fabric/wood: inches ↔ meters
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===============FOOTER START=============== -->
+    <!-- Font Awesome CDN   -->
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- LEFT : FOLLOW US -->
+        <div class="footer-box follow-us">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- CENTER : LOGO + TEXT -->
+        <div class="footer-box footer-center">
+            <img src="/Images/logo5.png" alt="Logo" class="footer-logo-center">
+            <h3>Metric Conversions</h3>
+            <p>Accurate Conversions & Learning</p>
+        </div>
+
+        <!-- RIGHT : CONTACT US -->
+        <div class="footer-box contact-us">
+            <h3>Contact Us</h3>
+            <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+            <p><i class="fas fa-location-dot"></i> Karachi, Pakistan</p>
+        </div>
+
+    </div>
+</footer>
+
+<div class="copyright">
+    © 2025 Metric Conversions – Accurate Conversions & Learning Resources
+</div>
+  
+    <!-- ===============FOOTER END=============== -->
+
+    <!-- ==============JAVA SCRIPT LINK=============== -->
+    <script src="JavaScript/Script.js"></script>
+    <!-- ==============JAVA SCRIPT LINK=============== -->
+
+
+</body>
+</html>
